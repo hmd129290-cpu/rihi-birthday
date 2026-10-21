@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Protected</title>
+</head>
+<body>
+  <div id="login">
+    <h2>পাসওয়ার্ড দিন</h2>
+    <input type="password" id="pass" placeholder="Enter Password">
+    <button onclick="checkPassword()">প্রবেশ করুন</button>
+    <p id="error" style="color:red"></p>
+  </div>
+
+  <div id="content" style="display:none">
+    <!-- এখানে আপনার ওয়েবসাইটের আসল HTML কনটেন্ট রাখুন --><!DOCTYPE html>  <html lang="bn">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Happy Birthday Rihi ❤️</title>  <style>  
+* {  
+  box-sizing: border-box;  
+}  
+  
+:root {  
+  --pink: #ff5c91;  
+  --deep: #a81449;  
+  --cream: #fff4f7;  
+}  
+  
+body {  
+  margin: 0;  
+  min-height: 100vh;  
+  font-family: "Noto Sans Bengali", "Hind Siliguri",  
+               "Vrinda", sans-serif;  
+  background: linear-gradient(145deg, #fff0f5, #ffd3e1, #fff5f8);  
+  color: #701638;  
+  text-align: center;  
+  overflow-x: hidden;  
+}  
+  
+.hero {  
+  padding: 52px 18px 28px;  
+}  
+  
+.tag {  
+  display: inline-block;  
+  padding: 8px 17px;  
+  background: white;  
+  border-radius: 30px;  
+  color: #e33d78;  
+  font-size: 14px;  
+  box-shadow: 0 5px 20px #e84d8020;  
+}  
+  
+h1 {  
+  font-size: clamp(36px, 9vw, 65px);  
+  margin: 20px 0 10px;  
+  color: #d92d6b;  
+  text-shadow: 2px 3px 0 #ffffff;  
+}  
+  
+.subtitle {  
+  font-size: 17px;  
+  line-height: 1.9;  
+  max-width: 520px;  
+  margin: 0 auto;  
+}  
+  
+.heart {  
+  display: inline-block;  
+  animation: beat 1s infinite;  
+}  
+  
+@keyframes beat {  
+  50% { transform: scale(1.25); }  
+}  
+  
+.container {  
+  width: min(900px, 92%);  
+  margin: 10px auto 45px;  
+}  
+  
+.hint {  
+  margin: 20px 0;  
+  color: #a83a60;  
+}  
+  
+.cards {  
+  display: grid;  
+  grid-template-columns: repeat(2, minmax(0, 1fr));  
+  gap: 16px;  
+}  
+  
+.card {  
+  border: 2px solid #ffffffc9;  
+  border-radius: 25px;  
+  padding: 25px 12px;  
+  min-height: 175px;  
+  background: #ffffffb8;  
+  color: #9c174b;  
+  cursor: pointer;  
+  box-shadow: 0 10px 30px #c52c6512;  
+  transition: transform .25s, box-shadow .25s;  
+  font: inherit;  
+}  
+  
+.card:hover, .card:focus-visible {  
+  transform: translateY(-5px);  
+  box-shadow: 0 15px 35px #c52c6530;  
+  outline: 2px solid #ff85ad;  
+}  
+  
+.card .emoji {  
+  display: block;  
+  font-size: 47px;  
+  margin-bottom: 12px;  
+}  
+  
+.card strong {  
+  display: block;  
+  font-size: 19px;  
+  margin-bottom: 7px;  
+}  
+  
+.card small {  
+  font-size: 13px;  
+  color: #b34b70;  
+  line-height: 1.7;  
+}  
+  
+.reveal {  
+  display: none;  
+  margin-top: 22px;  
+  padding: 26px 20px;  
+  border: 2px solid white;  
+  border-radius: 25px;  
+  background: #fffafc;  
+  box-shadow: 0 15px 40px #b721571b;  
+  animation: appear .4s ease;  
+  text-align: center;  
+  line-height: 2;  
+}  
+  
+.reveal.show {  
+  display: block;  
+}  
+  
+@keyframes appear {  
+  from { opacity: 0; transform: translateY(12px); }  
+  to { opacity: 1; transform: translateY(0); }  
+}  
+  
+.date-big {  
+  font-size: clamp(27px, 7vw, 43px);  
+  font-weight: bold;  
+  color: #e33270;  
+  line-height: 1.6;  
+}  
+  
+.cake {  
+  font-size: 85px;  
+  display: inline-block;  
+  animation: bounce 1.2s infinite;  
+}  
+  
+@keyframes bounce {  
+  50% { transform: translateY(-9px); }  
+}  
+  
+.candle {  
+  font-size: 22px;  
+}  
+  
+.letter {  
+  text-align: left;  
+  white-space: pre-line;  
+  font-size: 16px;  
+}  
+  
+.letter h2 {  
+  text-align: center;  
+}  
+  
+.promise {  
+  font-size: 18px;  
+}  
+  
+.close-btn {  
+  margin-top: 18px;  
+  border: 0;  
+  padding: 11px 22px;  
+  border-radius: 25px;  
+  color: white;  
+  background: #e43d79;  
+  cursor: pointer;  
+  font: inherit;  
+}  
+  
+.footer {  
+  padding: 30px 15px 40px;  
+  color: #a83a60;  
+  line-height: 2;  
+}  
+  
+.float-heart {  
+  position: fixed;  
+  bottom: -30px;  
+  pointer-events: none;  
+  z-index: 5;  
+  animation: floatUp 5s linear forwards;  
+}  
+  
+@keyframes floatUp {  
+  to {  
+    transform: translateY(-110vh) rotate(30deg);  
+    opacity: 0;  
+  }  
+}  
+  
+@media (max-width: 440px) {  
+  .cards { gap: 10px; }  
+  .card { min-height: 155px; padding: 18px 7px; }  
+  .card .emoji { font-size: 38px; }  
+  .card strong { font-size: 16px; }  
+  .card small { font-size: 12px; }  
+  .letter { font-size: 14px; }  
+}  
+</style>  </head>  <body>  <header class="hero">  
+  <span class="tag">💌 শুধু তোমার জন্য, ময়না</span>    <h1>Happy Birthday<br>  
+    <span class="heart">❤️</span> Rihi  
+  </h1>    <p class="subtitle">  
+    আমার ময়না, আমার সবকিছু 💗<br>  
+    তোমার বিশেষ দিনটাকে একটু ভালোবাসায় সাজালাম।  
+    <br, প্রিয়। 🥹  
+  </p>  
+</header>  <main class="container">  
+  <p class="hint">✨ press Every Box one by one ✨</p>    <section class="cards">  
+    <button class="card" onclick="openBox('date')">  
+      <span class="emoji">oct২৪</span>  
+      <strong>তোমার জিবনের  বিশেষ তারিখ</strong>  
+      <small>please Press 💗</small>  
+    </button>  <button class="card" onclick="openBox('cake')">  
+  <span class="emoji">🎁</span>  
+  <strong>তোমার জন্মদিনের কেক</strong>  
+  <small>তোমার জন্য ছোট্ট সারপ্রাইজ 🎂</small>  
+</button>  
+
+<button class="card" onclick="openBox('letter')">  
+  <span class="emoji">💌</span>  
+  <strong>তোমার জন্য চিঠি</strong>  
+  <small>মনের ভেতরের কিছু কথা ❤️</small>  
+</button>  
+
+<button class="card" onclick="openBox('promise')">  
+  <span class="emoji">🫶</span>  
+  <strong>আমার প্রতিশ্রুতি</strong>  
+  <small>একসঙ্গে বুড়ো হওয়ার গল্প 🥹</small>  
+</button>
+
+  </section>    <section id="date" class="reveal" aria-live="polite">  
+    <div style="font-size:45px">🗓️💗</div>  
+    <h2>এই দিনটা আমার কাছে বিশেষ</h2>  
+    <div class="date-big">২৪ অক্টোবর ২০২৬</div>  
+    <p>  
+      শুভ জন্মদিন, আমার ময়না! ❤️<br>  
+      পৃথিবীতে তোমার আসার দিনটা আমার কাছে  
+      ভীষণ সুন্দর একটা দিন।  
+    </p>  
+  </section>    <section id="cake" class="reveal" aria-live="polite">  
+    <div class="candle">🕯️ 🕯️ 🕯️</div>  
+    <div class="cake">🎂</div>  
+    <h2>শুভ জন্মদিন, Rihi! 💗</h2>  
+    <p>  
+      চোখ বন্ধ করে একটা ইচ্ছা করো, ময়না! ✨<br>  
+      তোমার জীবনের প্রতিটা দিন হাসিতে ভরে উঠুক।<br>  
+      তোমার সব সুন্দর স্বপ্ন সত্যি হোক। ❤️  
+    </p>  
+    <button class="close-btn" onclick="celebrate()">  
+      🎉 তোমার জন্য ভালোবাসা!  
+    </button>  
+  </section>    <section id="letter" class="reveal letter" aria-live="polite">  
+    <h2>🎂 শুভ জন্মদিন, Rihi ❤️</h2>  
+    <strong>আমার ময়না, আমার সবকিছু 💗</strong>  আজ ২৪ অক্টোবর, আমার মস্তিষ্কের স্নায়ুকোষে থাকা অতি প্রিয় মানুষ, আমার সবকিছু—তোমাকে জানাই জন্মদিনের শুভেচ্ছা। শুভ জন্মদিন।  
+
+সামর্থ্য থাকলে শহরের সব বিলবোর্ডে আজ এই বিজ্ঞপ্তি প্রকাশ করতাম।  
+
+যেহেতু সেই সামর্থ্য নেই, তাই শুধু তোমাকেই লিখলাম।  
+
+পৃথিবীর স্মরণকালের সব সুখ তোমার হোক।  
+
+তোমার অস্তিত্ব আমার জীবনের সবচেয়ে সুন্দর অনুভূতি। তুমি আমার জীবনে আসার পর কোনো কষ্ট যেন তোমাকে ছুঁতে না পারে।  
+
+এই দিনটা সবার জন্য সাধারণ, কিন্তু আমার জন্য বিশেষ।  
+
+আবারও জানাই, শুভ জন্মদিনের শুভেচ্ছা। ❤️
+
+  </section>    <section id="promise" class="reveal promise" aria-live="polite">  
+    <div style="font-size:48px">🫂❤️</div>  
+    <h2>আমার প্রতিশ্রুতি, আমার মনের কথা</h2>  
+    <p>  
+      তোমার হাতটা যৌবন বয়সে ধরেছি,  
+      একসঙ্গে বৃদ্ধ হয়ে মরতে চাই।  
+      হাতটি ছেড়ে দিও না। 🥹❤️  
+    </p>  
+    <p>  
+      <strong>ইতি,</strong><br>  
+      তোমার বাজপাখি ❤️  
+    </p>  
+  </section>  
+</main>  <footer class="footer">  
+  <div style="font-size:28px">💗 ♡ 💗</div>  
+  শুধু তোমার জন্য বানানো,<br>  
+  অনেক অনেক ভালোবাসা নিয়ে।<br>  
+  <strong>Forever yours, Rihi's Bajpakhi ❤️</strong>  
+</footer>  <script>  
+function openBox(id) {  
+  document.querySelectorAll('.reveal').forEach(section => {  
+    section.classList.remove('show');  
+  });  
+  
+  const chosen = document.getElementById(id);  
+  chosen.classList.add('show');  
+  
+  setTimeout(() => {  
+    chosen.scrollIntoView({  
+      behavior: 'smooth',  
+      block: 'nearest'  
+    });  
+  }, 80);  
+  
+  if (id === 'cake') celebrate();  
+}  
+  
+function celebrate() {  
+  const emojis = ['💗', '❤️', '💕', '✨', '💖', '🎉'];  
+  
+  for (let i = 0; i < 28; i++) {  
+    const heart = document.createElement('span');  
+    heart.className = 'float-heart';  
+    heart.textContent =  
+      emojis[Math.floor(Math.random() * emojis.length)];  
+  
+    heart.style.left = Math.random() * 100 + 'vw';  
+    heart.style.fontSize = (18 + Math.random() * 22) + 'px';  
+    heart.style.animationDuration = (3 + Math.random() * 3) + 's';  
+  
+    document.body.appendChild(heart);  
+    setTimeout(() => heart.remove(), 6500);  
+  }  
+}  
+</script>  </body>  
+</html>  
+    <h1>স্বাগতম!</h1>
+    <p>আপনার ওয়েবসাইট এখানে দেখা যাবে।</p>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = "24102026";
+
+      if (document.getElementById("pass").value === password) {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      } else {
+        document.getElementById("error").textContent =
+          "ভুল পাসওয়ার্ড! আবার চেষ্টা করুন।";
+      }
+    }
+  </script>
+</body>
+</html>
